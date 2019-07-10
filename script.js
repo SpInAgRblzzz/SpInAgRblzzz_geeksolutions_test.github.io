@@ -14,8 +14,24 @@ function addItem(e) {
       password
     };
     userlist.push(user);
+    fillTable(userlist, table);
     localStorage.setItem('userlist', JSON.stringify(userlist));
     this.reset();
 }
 
 form.addEventListener('submit', addItem)
+
+function fillTable(list = [], table) {
+  table.innerHTML = list.map((plate, i) => {
+    return `
+      <tr>
+        <td>
+          ${userlist.username}
+        </td>
+        <td>
+          ${userlist.password}
+        </td>
+      </tr>
+    `;
+  }).join('');
+}

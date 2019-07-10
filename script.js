@@ -9,6 +9,7 @@ function addItem(e) {
     e.preventDefault();
     const username = (this.querySelector('[name=username]')).value;
     const password = (this.querySelector('[name=password]')).value;
+    if(username === '' || password === ''){return}
     const user = {
       username,
       password

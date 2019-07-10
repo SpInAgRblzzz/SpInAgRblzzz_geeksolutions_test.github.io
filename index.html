@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>geek solutions test</title>
+</head>
+<body>
+    <table class="userlist-content">
+        <p>No users logged in.</p>
+    </table>
+    <div class="popup">
+        <h3 class="popup-title">    
+            Input your username and password
+        </h3>
+        <form action="send-form" method="POST" class="popup-form">
+            <fieldset class="form-item username">
+                <label for="form-username">Username:</label>
+                <input type="text" name="username" id="form-username">
+                <p class="error"></p>
+            </fieldset>
+            <fieldset class="form-item password">
+                <label for="form-password">Password:</label>
+                <input type="password" name="password" id="form-password">
+                <p class="error"></p>
+            </fieldset>
+            <button type="submit" class="form-submit">Log In</button>
+            <button type="button" class="form-close">X</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

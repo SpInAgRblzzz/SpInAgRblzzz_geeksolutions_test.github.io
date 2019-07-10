@@ -3,6 +3,9 @@ const form = document.querySelector('.popup-form');
 const table = document.querySelector('.userlist-content')
 const userlist = JSON.parse(localStorage.getItem('userlist')) || [];
 
+//заполнение таблицы при запуске
+fillTable(userlist, table);
+
 //добавление данных в localStorage
 function addItem(e) {
     console.log(e);

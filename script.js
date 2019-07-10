@@ -1,4 +1,5 @@
 //получение элементов документа
+const popup = document.querySelector('.popup');
 const form = document.querySelector('.popup-form');
 const table = document.querySelector('.userlist-content')
 const userlist = JSON.parse(localStorage.getItem('userlist')) || [];
@@ -40,3 +41,16 @@ function fillTable(list = [], table) {
     `;
   }).join('');
 }
+
+//кнопки попапа
+const showBtn = document.querySelector('.show-popup');
+showBtn.addEventListener('click',()=>{
+  popup.classList.remove('visually-hidden');
+  showBtn.classList.add('visually-hidden');
+});
+
+const hideBtn = document.querySelector('.hide-popup');
+hideBtn.addEventListener('click',()=>{
+  popup.classList.add('visually-hidden');
+  showBtn.classList.remove('visually-hidden');
+});

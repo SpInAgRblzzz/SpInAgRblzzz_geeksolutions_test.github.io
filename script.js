@@ -21,6 +21,7 @@ function addItem(e) {
 
 form.addEventListener('submit', addItem)
 
+//функция заполнения таблицы
 function fillTable(list = [], table) {
   table.innerHTML = list.map((plate, i) => {
     return `

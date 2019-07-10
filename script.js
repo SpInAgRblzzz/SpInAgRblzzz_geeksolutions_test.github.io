@@ -23,14 +23,14 @@ form.addEventListener('submit', addItem)
 
 //функция заполнения таблицы
 function fillTable(list = [], table) {
-  table.innerHTML = list.map((plate, i) => {
+  table.innerHTML = list.map((user) => {
     return `
       <tr>
         <td>
-          ${userlist.username}
+          ${user.username}
         </td>
         <td>
-          ${userlist.password}
+          ${user.password}
         </td>
       </tr>
     `;

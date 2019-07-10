@@ -5,6 +5,7 @@ const userlist = JSON.parse(localStorage.getItem('userlist')) || [];
 
 //добавление данных в localStorage
 function addItem(e) {
+    console.log(e);
     e.preventDefault();
     const username = (this.querySelector('[name=username]')).value;
     const password = (this.querySelector('[name=password]')).value;
@@ -16,3 +17,5 @@ function addItem(e) {
     localStorage.setItem('userlist', JSON.stringify(userlist));
     this.reset();
 }
+
+form.addEventListener('submit', addItem)

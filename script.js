@@ -9,14 +9,13 @@ fillTable(userlist, table);
 
 //добавление данных в localStorage
 function addItem(e) {
-    console.log(e);
     e.preventDefault();
     const username = (this.querySelector('[name=username]')).value;
-    const password = (this.querySelector('[name=password]')).value;
+    const password = (this.querySelector('[name=password]')).value;    
     if(username === '' || password === ''){return}
     const user = {
       username,
-      password: CryptoJS.AES.encrypt(password, "GEEK_Solutions_test")
+      password: String(CryptoJS.AES.encrypt(password, "GEEK_Solutions_test"))
     };
     userlist.push(user);
     fillTable(userlist, table);
@@ -60,7 +59,6 @@ const showBtn = document.querySelector('.show-popup');
 showBtn.addEventListener('click',()=>{
   popup.classList.remove('visually-hidden');
   showBtn.classList.add('visually-hidden');
-  alert('wow')
 });
 
 const hideBtn = document.querySelector('.hide-popup');

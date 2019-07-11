@@ -28,16 +28,24 @@ form.addEventListener('submit', addItem)
 
 //функция заполнения таблицы
 function fillTable(list = [], table) {
+  if(userlist.length === 0){
+    table.innerHTML = `
+      <p>No users logged in.</p>
+    `;
+    return
+  }
   const tableHeader = `
-    <tr>
-      <th>Username</th>
-      <th>Encripted password</th>
-    </tr>
+    <table>
+      <tr>
+        <th>Username</th>
+        <th>Encripted password</th>
+      </tr>
   `;
-  table.innerHTML = tableHeader + list.map((user) => {
+  table.innerHTML = tableHeader + list.map((user,index) => {
     return `
       <tr>
         <td>
+          <button type="button" data-user-index = "${index}" class="delete-row-btn">Delete user</button>
           ${user.username}
         </td>
         <td>
@@ -45,7 +53,7 @@ function fillTable(list = [], table) {
         </td>
       </tr>
     `;
-  }).join('');
+  }).join('') + '</table>';
 }
 
 //кнопки попапа

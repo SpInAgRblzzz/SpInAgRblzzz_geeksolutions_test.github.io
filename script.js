@@ -44,8 +44,7 @@ function fillTable(list = [], table) {
   table.innerHTML = tableHeader + list.map((user,index) => {
     return `
       <tr>
-        <td>
-          <button type="button" data-user-index = "${index}" class="delete-row-btn">Delete user</button>
+        <td>          
           ${user.username}
         </td>
         <td>
@@ -61,6 +60,7 @@ const showBtn = document.querySelector('.show-popup');
 showBtn.addEventListener('click',()=>{
   popup.classList.remove('visually-hidden');
   showBtn.classList.add('visually-hidden');
+  alert('wow')
 });
 
 const hideBtn = document.querySelector('.hide-popup');

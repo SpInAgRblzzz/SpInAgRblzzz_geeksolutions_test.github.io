@@ -16,7 +16,7 @@ function addItem(e) {
     if(username === '' || password === ''){return}
     const user = {
       username,
-      password
+      password: CryptoJS.AES.encrypt(password, "GEEK_Solutions_test")
     };
     userlist.push(user);
     fillTable(userlist, table);

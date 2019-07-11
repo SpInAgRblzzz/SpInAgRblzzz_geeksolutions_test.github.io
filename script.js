@@ -28,7 +28,13 @@ form.addEventListener('submit', addItem)
 
 //функция заполнения таблицы
 function fillTable(list = [], table) {
-  table.innerHTML = list.map((user) => {
+  const tableHeader = `
+    <tr>
+      <th>Username</th>
+      <th>Encripted password</th>
+    </tr>
+  `;
+  table.innerHTML = tableHeader + list.map((user) => {
     return `
       <tr>
         <td>

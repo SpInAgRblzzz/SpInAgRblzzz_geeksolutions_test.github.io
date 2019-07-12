@@ -55,11 +55,14 @@ function fillTable(list = [], table) {
 }
 
 //кнопки попапа
+const popupBackground = document.querySelector('.popup-background');
+
 const showBtn = document.querySelector('.show-popup');
 showBtn.addEventListener('click',()=>{
   popup.classList.remove('visually-hidden');
   popup.classList.remove('hidden');
   showBtn.classList.add('hidden');
+  popupBackground.classList.remove('popup-background-hidden');
   //showBtn.classList.add('visually-hidden');
 });
 
@@ -69,4 +72,5 @@ hideBtn.addEventListener('click',()=>{
   //popup.classList.add('visually-hidden');
   showBtn.classList.remove('hidden');
   showBtn.classList.remove('visually-hidden');
+  popupBackground.classList.add('popup-background-hidden');
 });

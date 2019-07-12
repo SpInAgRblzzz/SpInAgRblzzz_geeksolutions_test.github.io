@@ -78,10 +78,39 @@ body {
     margin-left: -175px;
     bottom: 50%;
     margin-bottom: -100px;
-    transition: 0.3s;
+	transition: 0.3s;
+	background-color: #ffffff;
+	padding: 15px;
 }
 
 .hidden{
 	top: -100%;
 	bottom:110%;
+}
+
+td,
+th{
+	border: solid 2px;
+	padding: 4px;
+}
+
+table{
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	min-width: 700px;
+}
+
+tbody,
+tr:first-child{
+	border: solid 3px;
+}
+
+tr:first-child td{
+
+}
+
+th{
+	font-size: 20px;
+    font-weight: 800;
 }

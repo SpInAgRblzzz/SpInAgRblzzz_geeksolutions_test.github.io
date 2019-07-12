@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>geek solutions test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="userlist-content">
-        <p>No users logged in. testing</p>
-    </div>
-    <button type="button" class="show-popup">Show popup</button>
-    <div class="popup visually-hidden">
-        <h3 class="popup-title">    
-            Input your username and password
-        </h3>
-        <form class="popup-form">
-            <fieldset class="form-item username">
-                <label for="form-username">Username:</label>
-                <input type="text" name="username" id="form-username">
-                <p class="error"></p>
-            </fieldset>
-            <fieldset class="form-item password">
-                <label for="form-password">Password:</label>
-                <input type="password" name="password" id="form-password">
-                <p class="error"></p>
-            </fieldset>
-            <button type="submit" class="form-submit">Log In</button>
-            <button type="button" class="hide-popup">X</button>
-        </form>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script src="script.js"></script>
+    <main>
+        <div class="userlist-content">
+            <p>No users logged in. testing</p>
+        </div>
+        <button type="button" class="show-popup">log in</button>
+        <div class="popup visually-hidden hidden">
+            <h3 class="popup-title">    
+                Input your username and password
+            </h3>
+            <form class="popup-form">
+                <fieldset class="form-item username">
+                    <label for="form-username">Username:</label>
+                    <input type="text" name="username" id="form-username">
+                    <p class="error"></p>
+                </fieldset>
+                <fieldset class="form-item password">
+                    <label for="form-password">Password:</label>
+                    <input type="password" name="password" id="form-password">
+                    <p class="error"></p>
+                </fieldset>
+                <button type="submit" class="form-submit">Log In</button>
+                <button type="button" class="hide-popup">X</button>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+        <script src="script.js"></script>
+    </main>
 </body>
 </html>

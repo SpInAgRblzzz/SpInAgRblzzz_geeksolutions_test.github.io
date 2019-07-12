@@ -58,11 +58,15 @@ function fillTable(list = [], table) {
 const showBtn = document.querySelector('.show-popup');
 showBtn.addEventListener('click',()=>{
   popup.classList.remove('visually-hidden');
-  showBtn.classList.add('visually-hidden');
+  popup.classList.remove('hidden');
+  showBtn.classList.add('hidden');
+  //showBtn.classList.add('visually-hidden');
 });
 
 const hideBtn = document.querySelector('.hide-popup');
 hideBtn.addEventListener('click',()=>{
-  popup.classList.add('visually-hidden');
+  popup.classList.add('hidden');
+  //popup.classList.add('visually-hidden');
+  showBtn.classList.remove('hidden');
   showBtn.classList.remove('visually-hidden');
 });

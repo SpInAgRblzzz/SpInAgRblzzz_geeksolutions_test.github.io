@@ -65,6 +65,10 @@ fieldset{
 
 	cursor: pointer;
 
+	-webkit-transition: 0.3s;
+
+	-o-transition: 0.3s;
+
 	transition: 0.3s
 }
 
@@ -83,10 +87,13 @@ fieldset{
     margin-left: -175px;
     bottom: 50%;
     margin-bottom: -100px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 	background-color: #ffffff;
 	padding: 15px;
-	box-shadow: 15px 15px 15px #000000;
+	-webkit-box-shadow: 15px 15px 15px #000000;
+	        box-shadow: 15px 15px 15px #000000;
 	pointer-events: auto;
 }
 
@@ -126,6 +133,8 @@ th{
     width: 100%;
     height: 100%;
 	opacity: 0.9;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
@@ -144,6 +153,8 @@ th{
 
 .hide-popup svg{
 	opacity: 0.3;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 
@@ -175,6 +186,8 @@ th{
 }
 
 .form-item{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
     padding: 0;    
 }
@@ -218,6 +231,10 @@ input.input-error{
 	cursor: pointer;
 	background-color: #d4d4d4;
 
+	-webkit-transition: 0.3s;
+
+	-o-transition: 0.3s;
+
 	transition: 0.3s;
 }
 
@@ -227,6 +244,7 @@ input.input-error{
 
 .form-submit:active{
 	background-color: #9e9e9e;
-	box-shadow: inset 3px 3px 0 0 #656565;
+	-webkit-box-shadow: inset 3px 3px 0 0 #656565;
+	        box-shadow: inset 3px 3px 0 0 #656565;
 	outline: none;
 }

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>geek solutions test</title>
+    <title>GEEK solutions test</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <div class="userlist-content">
-            <p>No users logged in. testing</p>
+        <div class="userlist-content">            
         </div>
         <button type="button" class="show-popup">log in</button>
         <div class="popup-background popup-background-hidden">            
@@ -40,7 +39,31 @@
             </button>
         </div>
     </main>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>    
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCiR3rfLPl6ptxTE99ThKT74UbLqGvxyw8",
+        authDomain: "geeksolutionstest-acf9f.firebaseapp.com",
+        databaseURL: "https://geeksolutionstest-acf9f.firebaseio.com",
+        projectId: "geeksolutionstest-acf9f",
+        storageBucket: "",
+        messagingSenderId: "3748240435",
+        appId: "1:3748240435:web:aab3790768689c9f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <script src="script.js"></script>
+    <script src="inputValudatior.js"></script>
+    <script src="fillTable.js"></script>
+    <script src="popupAnimation.js"></script>
+    <script src="script.js"></script>    
 </body>
 </html>

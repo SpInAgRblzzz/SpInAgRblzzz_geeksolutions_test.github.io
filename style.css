@@ -36,6 +36,7 @@ fieldset{
 
 .userlist-content{
 	margin:0 auto;
+	margin-top: 50px;
 	max-width: 1200px;
 }
 
@@ -186,7 +187,8 @@ th{
     height: 25px;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 16px;
+	font-size: 16px;
+	outline: none;
 }
 
 .error{
